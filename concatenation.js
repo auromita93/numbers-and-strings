@@ -1,7 +1,7 @@
 var numString = [];
 $(function enterValue() {
    
-    $('#numStringForm').on('submit', enterValue(){
+    $('#numStringForm').on('submit', enterValue())
     numString.push($('#numStringForm :textarea').val());
     console.log(JSON.stringify(numString));
     
@@ -11,7 +11,8 @@ $(function enterValue() {
         sum = sum + numString[i];
     } 
     
-    if ($.isInteger($'#numStringForm :textarea').val()) {
+    if ($.isInteger($'#numStringForm :textarea').val())
+    {
         $('#count').text(numString.length);
         $('#sum').text(sum.toFixed());
         $('#mean').text(sum/count.toFixed());

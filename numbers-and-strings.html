@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Numbers and Strings</title>
+        <script type="text/javascript" src="concatenation.js"></script>
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.2.1.js" 
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script> 
+    </head>
+    <body>
+        <h1>Numbers and Strings</h1>
+        <form name="numStringForm">
+            <label for="enter">Enter numbers or text:</label><br>
+              <textarea id="entry"></textarea>
+            <br>
+            <button type="submit" id="submit" onclick="enterValue()">Submit</button>
+            <button type="reset" id="reset" onclick="resetForm()">Reset</button>
+        </form>
+       <section id="entries">
+         <table>
+      <tr>
+        <th>Numbers</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Count:</td>
+        <td id="count"></td>
+      </tr>
+      <tr>
+        <td>Sum:</td>
+        <td id="sum"></td>
+      </tr>
+      <tr>
+        <td>Mean (Avg):</td>
+        <td id="mean"></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Strings</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Number of Strings:</td>
+        <td id="words"></td>
+      </tr>
+      <tr>
+        <td>Concatenated:</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="concatenate"></td>  
+        <td></td>
+      </tr>
+    </table>
+    
+        </section>
+    </body>
+    
+</html>
